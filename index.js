@@ -53,7 +53,7 @@ app.post("/signup",async(req,res)=>{
                     VALUES("${name}","${email}","${hashedPassword}");
     `
     await database.run(userQuery);
-    res.send('User Added to database in');
+    res.send('User Added to database in Application');
     
 })
 
